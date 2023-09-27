@@ -9,8 +9,8 @@ public class Main {
         return (a + b);
     }
     // 2. add
-    public static int addTwo(int a, int b, int c, int d) {
-        return add(a,b) + add(c,d);
+    public static int add(int a, int b, int c, int d) {
+        return add(add(a,b), add(c,d));
     }
     // 3. morningGreeting
     public static String morningGreeting(String name) {
@@ -35,6 +35,6 @@ public class Main {
     }
     // 8. roundNegativeValueToNearestInteger
     public static int roundNegativeValueToNearestInteger(double value) {
-            return (int) Math.round(value);
+            return (int) -Math.round(-value);
     }
 }
